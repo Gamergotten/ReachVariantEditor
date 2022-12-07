@@ -101,6 +101,7 @@ namespace {
       QString("^="),
       QString("<<="),
       QString(">>="),
+      QString("abs"),
       // Compare:
       QString("=="),
       QString("!="),

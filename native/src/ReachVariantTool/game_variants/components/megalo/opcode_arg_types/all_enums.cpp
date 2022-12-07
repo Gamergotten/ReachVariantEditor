@@ -51,9 +51,13 @@ namespace Megalo {
          DetailedEnumValue("&=", DetailedEnumValueInfo::make_friendly_name("bitwise-AND with")),
          DetailedEnumValue("|=", DetailedEnumValueInfo::make_friendly_name("bitwise-OR with")),
          DetailedEnumValue("^=", DetailedEnumValueInfo::make_friendly_name("bitwise-XOR with")),
-         DetailedEnumValue("~=", DetailedEnumValueInfo::make_friendly_name("bitwise-NOT with")), // (a ~= b) == (a &= ~b)
+         DetailedEnumValue("~=", DetailedEnumValueInfo::make_friendly_name("bitwise-NOT of")), // (a ~= b) == (a &= ~b)
+         DetailedEnumValue("<<=", DetailedEnumValueInfo::make_friendly_name("bitwise-lshift with")),
+         DetailedEnumValue(">>=", DetailedEnumValueInfo::make_friendly_name("bitwise-rshift with")),
+         DetailedEnumValue("abs", DetailedEnumValueInfo::make_friendly_name("absolute value of")),
+
          //
-         DetailedEnumValue("+=",  DetailedEnumValueInfo::make_friendly_name("add(?)")), // KSoft calls this <<= but it acts like addition in MCC-Reach tests
+         //DetailedEnumValue("+=",  DetailedEnumValueInfo::make_friendly_name("add(?)")), // KSoft calls this <<= but it acts like addition in MCC-Reach tests
          //DetailedEnumValue("",  DetailedEnumValueInfo::make_friendly_name("crash the game with")), // KSoft calls this >>= but it crashes in tests
          //DetailedEnumValue("<<<=", DetailedEnumValueInfo::make_friendly_name("untested-operation with")),
       });
